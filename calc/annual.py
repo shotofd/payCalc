@@ -4,18 +4,12 @@ Created on Apr 11, 2016
 @author: David
 '''
 
-class custCalc(object):
+class Annual(object):
     '''
     classdocs
     '''
     
     def revAnnual(self):
-        
-        self.monthly = self.annualSalary / 12
-        #self.daily = self.weekly / 5
-        #self.hourly  = self.weekly / 40
-        
-        print(self.annualSalary)
         return self.annualSalary
     
     def revMonthly (self):
@@ -29,6 +23,9 @@ class custCalc(object):
     
     def revDaily(self):
         return (self.annualSalary / 52) / 5
+    
+    def revHourly(self):
+        return (self.annualSalary / 52) / 40
 
     def __init__(self , annualSal):
         '''
